@@ -51,12 +51,16 @@ svg: '<svg viewBox="0 0 448 512" class="bi solid-plus" fill="currentColor" xmlns
 
 - If not merged yet: https://github.com/heiseonline/shariff/pull/381/files
 - If not merged yet: https://github.com/heiseonline/shariff/pull/382/files and `popup: true,`
+- Don't forget to adpat copyright block `shariffData` in `package.json` of this repository here.
+- - `shariffData` is used in `webpack.config.js` to set copyright blocks in head of all compiled files.
+
 - Adjust `./src/plg_system_jooagshariffghsvs` if new version of plg_jooag_shariff available and if it makes sense to overtake something.
 
 ## node/npm updates/installation
-- `npm run g-npm-update-check` or (faster) `ncu`
-- `npm run g-ncu-override-json` (if needed) or (faster) `ncu -u`
-- `npm install` (if needed)
+- **(DON'T DO! Live with outdated dependencies and shit):**
+- - <strike>`npm run g-npm-update-check` or (faster) `ncu`</strike>
+- - <strike>`npm run g-ncu-override-json` (if needed) or (faster) `ncu -u`</strike>
+- - <strike>`npm install` (if needed)</strike>
 
 ## Start build
 - `npm run build`
