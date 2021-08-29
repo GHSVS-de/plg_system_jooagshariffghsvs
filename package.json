@@ -1,39 +1,58 @@
 {
-  "originalName": "shariff",
-  "name": "plg_system_jooagshariffghsvs",
-	"description": "Joomla system plugin. Combi of heiseonline/shariff and joomla-agency/plg_jooag_shariff. Embeds SVGs instead of loading fontawesome.",
-  "version": "2020.08.03",
-  "originalVersion": "3.2.1",
-  "minimumPhp": "7.2.0",
-  "maximumPhp": "",
-  "minimumJoomla": "3.9.8",
-  "maximumJoomla": "3.10.99999",
-  "allowDowngrades": "1",
-  "originalDescription": "Shariff enables website users to share their favorite content without compromising their privacy.",
-  "main": "src/js/shariff.js",
-  "scripts": {
-    "test": "eslint src && karma start --single-run",
-    "build": "rm -fr dist && webpack -p && node ./build.js",
-		"g-build": "node build.js",
-		"g-npm-update-check": "ncu",
-		"g-ncu-override-json": "ncu -u"
-  },
-  "originalRepository": {
-    "type": "git",
-    "url": "https://github.com/heiseonline/shariff"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/GHSVS-de/plg_system_jooagshariffghsvs"
-  },
+	"name": "plg_system_jooagshariffghsvs",
+	"nameReal": "plg_system_jooagshariffghsvs",
+	"filename": "jooagshariffghsvs",
+	"version": "2021.08.29",
+	"versionCompare": "2020.08.03",
+	"update": {
+		"type": "plugin",
+		"folder": "system",
+		"client": "site",
+		"tag": "stable",
+		"targetplatform": ".*"
+	},
+	"releaseTxt": {
+		"title": "Joomla system plugin JooagShariffGhsvs"
+	},
+	"changelog": {
+		"projecturl": "https://github.com/GHSVS-de/plg_system_jooagshariffghsvs",
+		"infosDE": "",
+		"infosEN": "https://github.com/GHSVS-de/plg_system_jooagshariffghsvs#readme",
+		"docsDE": "",
+		"docsEN": "",
+		"lastTests": [
+			"PHP8",
+			"J3.10.1",
+			"J4.0.0",
+			"Vivaldi",
+			"Firefox"
+		]
+	},
+	"minimumPhp": "7.2.0",
+	"maximumPhp": "8.9999.9999",
+	"minimumJoomla": "3.9.8",
+	"maximumJoomla": "4.9999.9999",
+	"allowDowngrades": "1",
+	"creationDate": "2018-05-27",
+	"licenseLong": "GNU General Public License version 3 or later; see LICENSE.txt.",
+	"copyright": "(C) 2018, G@HService Berlin Neukölln, Volkmar Volli Schlothauer.",
+	"author": {
+		"name": "G@HService Berlin Neukölln, Volkmar Volli Schlothauer",
+		"email": "",
+		"url": "https://www.ghsvs.de"
+	},
   "originalAuthor": {
     "name": "Ines Pauer",
     "email": "ipa@heise.de"
   },
-  "author": {
-    "name": "Volkmar Volli Schlothauer"
-  },
-  "contributors": [
+	"contributors": [
+		{
+			"name": "G@HService Berlin Neukölln, Volkmar Volli Schlothauer",
+			"email": "",
+			"url": "https://www.ghsvs.de"
+		}
+	],
+  "originalContributors": [
     {
       "name": "Philipp Busse",
       "email": "pmb@heise.de"
@@ -49,18 +68,44 @@
     {
       "name": "Deniz Sesli",
       "email": "dzs@heise.de"
-    },
-    {
-      "name": "Volkmat Volli Schlothauer (only changes of clone 'plg_system_jooagshariffghsvs')"
     }
   ],
+	"bugs": "https://github.com/GHSVS-de/plg_system_jooagshariffghsvs/issues",
+	"homepage": "https://github.com/GHSVS-de/plg_system_jooagshariffghsvs#readme",
+	"originalHomepage": "https://github.com/heiseonline/shariff",
+	"keywords": [
+		"heise",
+    "social buttons",
+    "shariff",
+		"joomla",
+		"system plugin",
+		"embedded svg"
+	],
+	"private": false,
+	"description": "Joomla system plugin. Combi of heiseonline/shariff and joomla-agency/plg_jooag_shariff. Embeds SVGs instead of loading fontawesome.",
+	"license": "GPL-3.0",
+  "originalLicense": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/GHSVS-de/plg_system_jooagshariffghsvs.git"
+	},
+  "originalRepository": {
+    "type": "git",
+    "url": "https://github.com/heiseonline/shariff"
+  },
+  "main": "src/js/shariff.js",
+  "scripts": {
+    "test": "eslint src && karma start --single-run",
+    "build": "rm -fr dist && webpack -p && node ./build.js",
+		"g-build": "node build.js",
+		"g-npm-update-check": "ncu",
+		"g-ncu-override-json": "ncu -u"
+  },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.8.2",
     "jquery": "^3.4.1"
   },
   "publishConfig": {},
-  "originalHomepage": "https://github.com/heiseonline/shariff",
-  "homepage": "https://github.com/GHSVS-de/plg_system_jooagshariffghsvs",
   "devDependencies": {
     "adm-zip": "0.5.5",
     "autoprefixer": "^8.6.5",
@@ -98,11 +143,5 @@
   },
   "browserify-shim": {
     "./dom": "global:jQuery"
-  },
-  "keywords": [
-    "heise",
-    "social buttons",
-    "shariff"
-  ],
-  "license": "MIT"
+  }
 }
