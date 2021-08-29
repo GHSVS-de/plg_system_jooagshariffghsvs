@@ -17,7 +17,7 @@
 
 # My personal build procedure (WSL 1, Debian, Win 10)
 - Prepare/adapt `./package.json`.
-- `cd /mnt/z/git-kram/shariff-embedded-svg-ghsvs`
+- `cd /mnt/z/git-kram/plg_system_jooagshariffghsvs`
 
 - If new version of Shariff available:
 - Download source code of that new release:
@@ -39,8 +39,8 @@ if (
 }
 ``´
 
-- The svg icons are to be embedded in JS files in `src/js/services`.
-- - Example from addthis.js (See changed properties faPrefix, faName and added svg):
+- The svg icons are to be embedded in JS files in `./src/js/services`.
+- - Example from addthis.js (See changed properties faPrefix, faName and added(!) svg):
 
 ```
 name: 'addthis',
@@ -51,7 +51,7 @@ svg: '<svg viewBox="0 0 448 512" class="bi solid-plus" fill="currentColor" xmlns
 
 - If not merged yet: https://github.com/heiseonline/shariff/pull/381/files
 - If not merged yet: https://github.com/heiseonline/shariff/pull/382/files and `popup: true,`
-- Adjust `src/plg_system_jooagshariffghsvs` if new version of plg_jooag_shariff available and if it makes sense to overtake something.
+- Adjust `./src/plg_system_jooagshariffghsvs` if new version of plg_jooag_shariff available and if it makes sense to overtake something.
 
 ## node/npm updates/installation
 - `npm run g-npm-update-check` or (faster) `ncu`
