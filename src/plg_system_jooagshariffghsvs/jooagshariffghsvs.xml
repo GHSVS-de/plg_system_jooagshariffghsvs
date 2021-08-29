@@ -78,7 +78,7 @@
 					<option value="standard">PLG_JOOAG_SHARIFF_STYLE_STANDARD</option>
 				</field>
 
-				<field name="com_content" label="PLG_JOOAG_SHARIFF_JOOMLA_CONTENT" type="radio" class="btn-group"
+				<field name="com_content" label="PLG_JOOAG_SHARIFF_JOOMLA_CONTENT" type="list" class="btn-group"
 					   default="0">
 					<option value="0">PLG_JOOAG_SHARIFF_DISABLED</option>
 				</field>
@@ -122,12 +122,12 @@
 					   label="PLG_JOOAG_OUTPUT_EVERYWHERE_DESC" class="alert alert-info"/>
 
 				<field type="line" name="shorttag_use_line"/>
-				<field name="com_shorttag" label="PLG_JOOAG_OUTPUT_SHORTTAG_MODE" type="radio" class="btn-group"
+				<field name="com_shorttag" label="PLG_JOOAG_OUTPUT_SHORTTAG_MODE" type="list" class="btn-group"
 					   default="1">
 					<!--<option value="0">PLG_JOOAG_SHARIFF_DISABLED</option>-->
 					<option value="1">PLG_JOOAG_SHARIFF_ENABLED</option>
 				</field>
-				<field type="spacer" name="shorttag_use_line_desc" showon="com_shorttag:1"
+				<field type="note" name="shorttag_use_line_desc" showon="com_shorttag:1"
 					   label="PLG_JOOAG_OUTPUT_SHORTTAG_MODE_DESC" class="alert alert-info"/>
 			</fieldset>
 
@@ -163,12 +163,12 @@
 				<field name="assets_line" type="line"/>
 				<field name="shariffcss" type="filelist" default="shariff.min.css"
 					   label="PLG_JOOAG_SHARIFF_ASSETS_CSS"
-						 directory="media/plg_system_jooagshariffghsvs/assets" filter="css"
+						 directory="media/plg_system_jooagshariffghsvs/assets" filter="css" fileFilter="css"
 					   hide_none="false" hide_default="true"/>
 
 				<field name="shariffjs" type="filelist" default="shariff.min.js"
 					label="PLG_JOOAG_SHARIFF_ASSETS_JS"
-					   directory="media/plg_system_jooagshariffghsvs/assets" filter="js" hide_none="false" hide_default="true"/>
+					   directory="media/plg_system_jooagshariffghsvs/assets" filter="js" fileFilter="js" hide_none="false" hide_default="true"/>
 				<!--<field name="labelcssjs" type="spacer" label="PLG_JOOAG_SHARIFF_ASSETS_DESC" class="alert alert-info"/>-->
 				<field name="php_backend_line" type="line"/>
 			</fieldset>
