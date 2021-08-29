@@ -1,0 +1,101 @@
+{
+  "originalName": "shariff",
+  "name": "shariff-embedded-svg-ghsvs",
+	"description": "A clone of heiseonline/shariff combined with a clone of joomla-agency/plg_jooag_shariff to get rid of fontawesome.",
+  "version": "2020.08.03",
+  "originalVersion": "3.2.1",
+  "minimumPhp": "7.2.0",
+  "maximumPhp": "",
+  "minimumJoomla": "3.9.8",
+  "maximumJoomla": "3.10.99999",
+  "allowDowngrades": "1",
+  "originalDescription": "Shariff enables website users to share their favorite content without compromising their privacy.",
+  "main": "src/js/shariff.js",
+  "scripts": {
+    "test": "eslint src && karma start --single-run",
+    "build": "rm -fr dist && webpack -p && node ./build.js"
+  },
+  "originalRepository": {
+    "type": "git",
+    "url": "https://github.com/heiseonline/shariff"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/GHSVS-de/shariff-embedded-svg-ghsvs"
+  },
+  "originalAuthor": {
+    "name": "Ines Pauer",
+    "email": "ipa@heise.de"
+  },
+  "author": {
+    "name": "Volkmar Volli Schlothauer"
+  },
+  "contributors": [
+    {
+      "name": "Philipp Busse",
+      "email": "pmb@heise.de"
+    },
+    {
+      "name": "Sebastian Hilbig",
+      "email": "seh@heise.de"
+    },
+    {
+      "name": "Erich Kramer",
+      "email": "km@heise.de"
+    },
+    {
+      "name": "Deniz Sesli",
+      "email": "dzs@heise.de"
+    },
+    {
+      "name": "Volkmat Volli Schlothauer (only changes of clone 'shariff-embedded-svg-ghsvs')"
+    }
+  ],
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.8.2",
+    "jquery": "^3.4.1"
+  },
+  "publishConfig": {},
+  "originalHomepage": "https://github.com/heiseonline/shariff",
+  "homepage": "https://github.com/GHSVS-de/shariff-embedded-svg-ghsvs",
+  "devDependencies": {
+    "adm-zip": "^0.4.16",
+    "autoprefixer": "^8.6.5",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "css-loader": "^0.28.11",
+    "eslint": "^4.19.1",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-import": "^2.17.3",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.8.0",
+    "eslint-plugin-standard": "^3.1.0",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^1.1.11",
+    "karma": "^4.1.0",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-mocha": "^1.3.0",
+    "karma-mocha-reporter": "^2.2.5",
+    "karma-phantomjs-launcher": "^1.0.4",
+    "karma-webpack": "^2.0.13",
+    "less": "^3.9.0",
+    "less-loader": "^4.1.0",
+    "mocha": "^5.2.0",
+    "postcss-loader": "^2.1.6",
+    "style-loader": "^0.23.1",
+    "url-loader": "^1.1.2",
+    "webpack": "^3.12.0",
+    "webpack-dev-server": "^2.11.5"
+  },
+  "browserify-shim": {
+    "./dom": "global:jQuery"
+  },
+  "keywords": [
+    "heise",
+    "social buttons",
+    "shariff"
+  ],
+  "license": "MIT"
+}
