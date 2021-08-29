@@ -163,12 +163,14 @@
 				<field name="assets_line" type="line"/>
 				<field name="shariffcss" type="filelist" default="shariff.min.css"
 					   label="PLG_JOOAG_SHARIFF_ASSETS_CSS"
-						 directory="media/plg_system_jooagshariffghsvs/assets" filter="css" fileFilter="css"
+						 directory="media/plg_system_jooagshariffghsvs/assets"
+					filter="\.css$" fileFilter="\.css$"
 					   hide_none="false" hide_default="true"/>
 
 				<field name="shariffjs" type="filelist" default="shariff.min.js"
 					label="PLG_JOOAG_SHARIFF_ASSETS_JS"
-					   directory="media/plg_system_jooagshariffghsvs/assets" filter="js" fileFilter="js" hide_none="false" hide_default="true"/>
+					   directory="media/plg_system_jooagshariffghsvs/assets"
+					filter="\.js$" fileFilter="\.js$" hide_none="false" hide_default="true"/>
 				<!--<field name="labelcssjs" type="spacer" label="PLG_JOOAG_SHARIFF_ASSETS_DESC" class="alert alert-info"/>-->
 				<field name="php_backend_line" type="line"/>
 			</fieldset>
