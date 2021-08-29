@@ -1,14 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<extension version="3.9" type="plugin" method="upgrade" group="system">
-	<name>plg_system_jooagshariffghsvs</name>
-	<author>Ufuk Avcu; edit by GHSVS.de</author>
-	<creationDate>27.05.2018</creationDate>
-	<copyright>Copyright (C) 2018 Joomla Agency. All rights reserved. Edit by ghsvs.de.</copyright>
+<extension type="plugin" method="upgrade" group="system">
+	<name>{{nameUpper}}</name>
+	<author>Ufuk Avcu; edits by {{authorName}}</author>
+	<creationDate>{{creationDate}}</creationDate>
+	<copyright>Copyright (C) 2018 Joomla Agency. All rights reserved. Edits by {{authorName}}.</copyright>
 	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
-	<authorUrl>joomla-agentur.de; edit by ghsvs.de</authorUrl>
+	<authorUrl>joomla-agentur.de; edits by {{authorUrl}}</authorUrl>
 	<version>{{version}}</version>
-	<description>PLG_SYSTEM_JOOAGSHARIFFGHSVS_XML_DESCRIPTION</description>
+	<versionHistory>
+		https://updates.ghsvs.de/changelog.php?file={{name}}
+	</versionHistory>
+	<description>{{nameUpper}}_XML_DESCRIPTION</description>
 
+	<updateservers><server type="extension" priority="1" name="{{nameUpper}}">https://raw.githubusercontent.com/GHSVS-de/upadateservers/master/{{name}}-update.xml</server></updateservers>
+
+	<changelogurl>https://raw.githubusercontent.com/GHSVS-de/upadateservers/master/{{name}}-changelog.xml</changelogurl>
+
+	<infourl>https://updates.ghsvs.de/changelog.php?file={{name}}</infourl>
+
+	<scriptfile>installerScript.php</scriptfile>
 	<minimumPhp>{{minimumPhp}}</minimumPhp>
 	<maximumPhp>{{maximumPhp}}</maximumPhp>
 	<minimumJoomla>{{minimumJoomla}}</minimumJoomla>
@@ -16,20 +26,25 @@
 	<allowDowngrades>{{allowDowngrades}}</allowDowngrades>
 
 	<files>
-		<folder>fields</folder>
-		<folder>language</folder>
+		<filename plugin="{{filename}}">{{filename}}.php</filename>
+		<filename>installerScript.php</filename>
 		<filename>jooag_shariff-services.xml</filename>
 		<filename>jooag_shariff-customDomains.xml</filename>
-		<filename plugin="jooagshariffghsvs">jooagshariffghsvs.php</filename>
 		<filename>LICENSE.txt</filename>
+		<folder>fields</folder>
+		<folder>language</folder>
 	</files>
 
-	<media folder="media" destination="plg_system_jooagshariffghsvs">
+	<media folder="media" destination="{{name}}">
 		<folder>assets</folder>
 	</media>
 
 	<config>
-		<fields name="params" addfieldpath="/plugins/system/jooagshariffghsvs/fields">
+		<fields name="params" addfieldpath="/plugins/system/{{filename}}/fields">
+
+			<fieldset name="basic">
+				<field type="hidden" default="1" name="{{filename}}plugin" />
+			</fieldset><!--/basic-->
 
 			<fieldset name="PLG_JOOAG_SHARIFF_SETTINGS" label="PLG_JOOAG_SHARIFF_SETTINGS">
 				<field type="jooagsystem" name="jooagsystem"/>
@@ -77,7 +92,7 @@
 				</field>
 
 				<field name="com_content_category_select" showon="com_content:1[AND]com_content_category_assignment:2,3" type="category" multiple="true"
-					   extension="com_content" label="PLG_JOOAG_SHARIFF_CATEGORY_SELECT"/>		   
+					   extension="com_content" label="PLG_JOOAG_SHARIFF_CATEGORY_SELECT"/>
 				<field name="com_content_menu_assignment" showon="com_content:1"
 					   label="PLG_JOOAG_SHARIFF_MENU_ASSIGNMENT" type="list" class="btn-group" default="1">
 					<option value="0">PLG_JOOAG_SHARIFF_SHOW_NOWHERE</option>
@@ -131,7 +146,7 @@
 					<option value="1">PLG_JOOAG_SHARIFF_ENABLED</option>
 				</field>
 				<field name="cache_handler" showon="cache:1[AND]shariff_counter:1" type="cachehandler"
-					   label="PLG_JOOAG_SHARIFF_CACHE_HANDLER"/>   
+					   label="PLG_JOOAG_SHARIFF_CACHE_HANDLER"/>
 				<field name="data_url" label="PLG_JOOAG_SHARIFF_DATA_URL" showon="shariff_counter:1" type="list" class="btn-group" default="0">
 					<option value="0">PLG_JOOAG_SHARIFF_DATA_URL_AUTOMATIC</option>
 					<option value="1">PLG_JOOAG_SHARIFF_DATA_URL_CUSTOM</option>

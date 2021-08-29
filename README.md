@@ -39,8 +39,8 @@ if (
 }
 ```
 
-- The svg icons are to be embedded in JS files in `./src/js/services`.
-- - Example from addthis.js (See changed properties faPrefix, faName and added(!) svg):
+- - The svg icons are to be embedded in JS files in `./src/js/services`.
+- - - Example from addthis.js (See changed properties faPrefix, faName and added(!) svg):
 
 ```
 name: 'addthis',
