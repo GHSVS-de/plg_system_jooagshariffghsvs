@@ -1,16 +1,12 @@
 const {
-	originalAuthor,
+	shariffData,
   author,
-  contributors,
-	originalHomepage,
   homepage,
-  license,
-	originalName,
   name,
   title,
-	originalVersion,
   version,
-} = require('./package.json')
+} = require('./package.json');
+
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const path = require('path')
 const webpack = require('webpack')
@@ -62,15 +58,16 @@ const baseConf = {
   plugins: [
     extractLess,
     new webpack.BannerPlugin({
-      banner: `${title || originalName} - v${originalVersion} - ${(new Date()).toGMTString()}
-${originalHomepage}
-Copyright (c) ${(new Date()).getFullYear()} ${originalAuthor.name}, ${contributors.map(c => c.name).join(', ')}
-Licensed under the ${license} license
+      banner: `${title || shariffData.name} - v${shariffData.version} - ${shariffData.date}
+${shariffData.homepage}
+Copyright (c) ${shariffData.year} ${shariffData.author.name}, ${shariffData.contributors.map(c => c.name).join(', ')}
+Licensed under the ${shariffData.license} license
 
-Edited clone ${name} - v${version}
-${homepage}
-The original code has been changed/edited by 
-${author.name}
+!EDITED VERSION!
+Edited for Joomla plugin ${name} - v${version}.
+Project: ${homepage}.
+The original code has been changed/edited by
+${author.name} - ${author.url}
 `
     })
   ],
