@@ -61,6 +61,7 @@ svg: '<svg viewBox="0 0 448 512" class="bi solid-plus" fill="currentColor" xmlns
 - - <strike>`npm run g-npm-update-check` or (faster) `ncu`</strike>
 - - <strike>`npm run g-ncu-override-json` (if needed) or (faster) `ncu -u`</strike>
 - - <strike>`npm install` (if needed)</strike>
+- At least all webpack parts are incompatible with newer versions. Endless work to correct that.
 
 ## Start build
 - `npm run build`
