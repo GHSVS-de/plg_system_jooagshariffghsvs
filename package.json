@@ -1,9 +1,10 @@
+
 {
 	"name": "plg_system_jooagshariffghsvs",
 	"nameReal": "plg_system_jooagshariffghsvs",
 	"filename": "jooagshariffghsvs",
-	"version": "2021.08.29",
-	"versionCompare": "2020.08.03",
+	"version": "2021.10.06",
+	"versionCompare": "2020.08.29",
 	"shariffData": {
 		"name": "shariff",
 		"version": "3.2.1",
