@@ -333,7 +333,21 @@ class plgSystemJooagshariffghsvs extends JPlugin
 			}
 
 			$json->services = array_values($json->services);
-			$json->cache->cacheDir = JPATH_SITE . '/cache/plg_system_jooagshariffghsvs';
+
+			// Bugfix GHSVS 2021-10. Attempt to assign property "cacheDir" on null.
+			$check = ['cache', 'client'];
+
+			foreach ($check as $property)
+			{
+				if (!property_exists($json, $property))
+				{
+					$json->$property = new stdClass;
+				}
+			}
+
+			$json->cache->cacheDir = $this->app->get('cache_path', JPATH_ADMINISTRATOR
+				. '/cache') . '/plg_system_jooagshariffghsvs';
+			// $json->cache->cacheDir = JPATH_SITE . '/cache/plg_system_jooagshariffghsvs';
 			$json->cache->ttl = $params->cache_time;
 			$json->client->timeout = $params->client_timeout;
 
