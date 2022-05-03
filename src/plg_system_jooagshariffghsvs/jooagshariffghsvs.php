@@ -115,8 +115,12 @@ class plgSystemJooagshariffghsvs extends JPlugin
 
 			foreach ($configs as $item)
 			{
-				@list($key, $value) = explode("=", $item);
-				$config[$key] = $value;
+				// Fix
+				if (strpos($item, '=') !== false)
+				{
+					list($key, $value) = explode("=", $item);
+					$config[$key] = $value;
+				}
 			}
 
 			$this->params->get('com_shorttag') ? $config['shorttag'] = 1 : $config['shorttag'] = 0;
