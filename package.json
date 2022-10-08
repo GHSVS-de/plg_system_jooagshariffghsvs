@@ -121,7 +121,7 @@
     "babel-loader": "^7.1.5",
     "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.7.0",
-		"chalk": "^4.1.2",
+		"chalk": "<5",
     "css-loader": "^0.28.11",
     "eslint": "^4.19.1",
     "eslint-config-standard": "^11.0.0",
