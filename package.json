@@ -41,7 +41,10 @@
 		"folder": "system",
 		"client": "site",
 		"tag": "stable",
-		"targetplatform": ".*"
+		"targetplatform": [
+			"3.*",
+			"4.*"
+		]
 	},
 	"releaseTxt": {
 		"title": "Joomla system plugin JooagShariffGhsvs"
