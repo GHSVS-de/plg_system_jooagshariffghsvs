@@ -1,3 +1,5 @@
+# !!!This repository was abandoned with the release of Joomla 6.!!!
+
 # This is a clone of https://github.com/heiseonline/shariff
 # combined with a clone of https://github.com/joomla-agency/plg_jooag_shariff .
 
@@ -15,7 +17,7 @@
 
 -----------------------------------------------------
 
-# My personal build procedure (WSL 1, Debian, Win 10)
+# My personal build procedure (WSL 1 or 2, Debian, Win 10)
 - Prepare/adapt `./package.json`.
 - `cd /mnt/z/git-kram/plg_system_jooagshariffghsvs`
 
